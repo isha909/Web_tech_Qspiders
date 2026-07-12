@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+</head>
+<body>
+  <!-- <table border="1" cellspacing="20" cellpadding="15" style="border-collapse: collapse;">
+    <tr>
+      <th>Name</th>
+      <th>Job</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Isha</td>
+      <td>CEO</td>
+      <td>isha@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Anshika</td>
+      <td>Developer</td>
+      <td>anshika@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Ayush</td>
+      <td>Marketing</td>
+      <td>ayush@gmail.com</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table border="1">
+    <tr>
+      <td colspan="4" align="center"> New Employee Record</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td colspan="2">Jobs</td>
+      <td>Working Experience</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Software Developer</td>
+      <td>Data Analyst</td>
+      <td rowspan="2" valign="center">5 years</td>
+    </tr>
+    <tr>
+      <td>Ale</td>
+      <td colspan="2">Senior Software Developer</td>
+    </tr>
+    <tr>
+      <td>Jack</td>
+      <td>Junior tech writter</td>
+      <td>Blogger</td>
+      <td>6 months</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table border="1">
+    <tr>
+      <th>Level 1</th>
+      <th>Level 2</th>
+      <th>Level 3</th>
+      <th>Info</th>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td rowspan="6">System</td>
+      <td rowspan="4">System Apps</td>
+      <td rowspan="3">SystemEnv</td>
+      <td>App Test</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <td>App Memory</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <td>App test</td>
+      <td>bar</td>
+    </tr>
+    <tr>
+      <td>SystemEnv2</td>
+      <td>App Test</td>
+      <td>bar</td>
+    </tr>
+    <tr>
+      <td rowspan="2">System Memory</td>
+      <td rowspan="2">Memory Test</td>
+      <td>Memory Func</td>
+      <td>foo</td>
+    </tr>
+    <tr>
+      <td>Apes Test</td>
+      <td>foo</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+      </tr>
+    </tbody>
+    <tfoot></tfoot>
+  </table> -->
+  
+  <!-- action tells where to store the data and method tells how to store the data  -->
+   <!-- get less secure and post more secure  -->
+
+<form action="home.html" method="get">
+
+<!-- <form action="https:httpbin.org/post" method="post">  // (for post) -->
+  <!-- for and id must be same to connect with each other -->
+
+  <label for="fName">First Name</label> 
+  <input type="text" id="fName" placeholder="Enter your first name" name="FName" required>
+  <br><br>
+  <label for="lName">Last Name</label>
+  <input type="text" id="lName" placeholder="Enter your last name" name="LName" required>
+  <br><br>
+  <label for="email">Email</label>
+  <input type="email" id="email" placeholder="Enter your email adddress" name="Email_id">
+  <br><br>
+  <label for="pass">Password</label>
+  <input type="password" id="pass" name="Pass" minlength="3" maxlength="10" pattern="[A-Z a-z]">
+  <br><br>
+ 
+  <!-- to wrap content in a box use fieldset -->
+  <fieldset> 
+    <legend>Gender</legend>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender"> 
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender">
+    <label for="others">Others</label>
+    <input type="radio" id="others" name="gender">
+    <!-- name is same for all so that only one can be selected -->
+  </fieldset>
+  <br><br>
+
+  <fieldset> 
+    <legend>Types of buttons</legend>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <br>
+    <input type="submit" value="Submit button">
+    <input type="reset" value="Reset button">
+  </fieldset>
+  <br><br>
+
+  <fieldset>
+    <legend>Skills</legend>
+      <label for="html">HTML</label>
+      <input type="checkbox" id="html">
+      <label for="css">CSS</label>
+      <input type="checkbox" id="css">
+      <label for="js">JavaScript</label>
+      <input type="checkbox" id="js">
+      <label for="react">React</label>
+      <input type="checkbox" id="react">
+  </fieldset>
+  <br><br>
+
+  <!-- for large text area like address use textarea  -->
+  <label for="address">Address</label>
+  <textarea id="address"></textarea> 
+  <br><br>
+
+
+  <label for="country">Select Country</label>
+  <select id="country">
+    <option selected disabled>Select Country</option>
+    <!-- value attribute is used so that in get method we can see the value selected in url  -->
+    <option value="IN">India</option>
+    <option>Sweden</option>
+    <option>Scotland</option>
+    <option>Australia</option>
+    <option>France</option>
+  </select>
+  <br><br>
+
+  <input type="file">
+  <!-- to add only number in laptop we use number input type but in mobile phone we can add both number and alphabets -->
+  <input type="number" placeholder="number..">
+  <!-- to add both number and alphabet in laptop but can only add number in phones -->
+  <input type="tel" placeholder="tel..">
+
+</form>
+
+</body>
+</html>

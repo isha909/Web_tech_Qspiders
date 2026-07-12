@@ -1,0 +1,458 @@
+/* *{
+  margin: 0;
+  padding: 0;
+} */
+/* @import url(); /*url of the css file
+@import url(); url of another css file */
+
+/* h3{
+  color: blueviolet;
+} */
+
+/* for id use # */
+/* #head{
+  color: pink;
+} */
+
+/* for class use dot  */
+/* .dev{
+  background-color: gray;
+  color: burlywood;
+} */
+
+/* for tagname just write the tag name  */
+/* p{
+  color: blue;
+  background-color: beige;
+} */
+
+/* for grouping selector write the selectors together seperated by comma  */
+/* #head , .dev , p{
+  border: 1px solid;
+} */
+
+/* child combinator selector use > */
+/* .box > p{
+  color: rgb(103, 32, 218);
+} */
+
+/* adjacent sibling selector only apply css to adjacent tags use +*/
+/* .head1 + p{
+  background-color: aqua;
+} */
+
+/* general sibling selector apply css to all the siblings of given tag use ~ */
+/* .head1 ~ p{
+  background-color: rosybrown;
+} */
+/* 
+input[type]{
+  background-color: aqua;
+}
+
+input[type="email"]{
+  background-color: beige;
+}
+
+input[name="xyz"]{
+  color: blue;
+}
+
+img[src=" "]{
+  border: 10px solid;
+}
+
+a[href="home.html"]{
+  color: red;
+  text-decoration: none;
+} */
+
+/* when cursor hovers the button  */
+/* button:hover{
+  background-color: black;
+  color: white;
+} */
+
+/* when the button is clicked that means it is active at that time to apply css write like this  */
+/* button:active{
+  background-color: aquamarine;
+  color: green;
+  border-radius: 20px;
+}
+
+input:checked+label{
+  color: darkcyan;
+}
+
+p::first-line{
+  color: blueviolet;
+}
+
+p::first-letter{
+  background-color: antiquewhite;
+  color: brown;
+}
+
+p::before{
+  content: This is added using css;
+} */
+
+/* Relative unit  */
+/* 
+.parent{
+  height: 500px;
+  width: 400px;
+  color: brown;
+}
+
+.child{
+  height: 50%;
+  width: 50%;
+  color: turquoise;
+}
+
+.gchild{
+  height: 50%;
+  width: 50%;
+  color: beige;
+}
+ */
+
+/* Absolute unit  */
+/* .parent{
+  
+} */
+
+/* Viewport unit  */
+/* .parent{
+  height: 100vh;
+  width: 100vw;
+  background-color: gray;
+} */
+
+/* block level */
+/* can change the behaviour from block to inline using display  */
+/* div{
+  display: block;
+  border: 3px solid; 
+  height: 200px;
+  width: 300px;
+
+} */
+
+/* can change the behaviour from inline to block using display  */
+/* inline element  */
+/* span{
+  display: block;
+  border: 3px solid; 
+  height: 200px;
+  width: 300px;
+} */
+
+/* inline- block element  */
+/* p{
+  display: inline-block;
+  border: 2px solid;
+  height: 200px;
+  width: 300px;
+} */
+
+
+/* last property will overwrite all other properties  */
+/* div{ */
+  /* height: 200px;
+  width: 300px;
+  border: 20px solid black; */
+
+      /* in all directions  */
+  /* margin: 50px;  */
+
+      /* in 2- 2 direction  */
+  /* margin: 30px 20px; */
+
+      /* top, left-right bottom */
+  /* margin: 20px 30px 40px; */
+
+      /* in clockwise direction  */
+  /* margin: 20px 30px 40px 50px;
+  padding: 30px; */
+
+  /* margin-top: 20px; */
+  /* margin-bottom: 60px;
+  margin-left: 50px;
+  margin-right: 70px;
+} */
+
+/* same as margin for padding  */
+  /* border: 5px solid black;
+  height: 200px;
+  width: 300px;
+  padding: 30px;
+  padding: 20px 40px;
+  padding: 20px 40px 60px;
+  padding: 20px 40px 60px 80px;
+  padding-top: 30px; */
+
+  /* height: 200px;
+  width: 200px;
+  border-top: 5px solid red;
+  border-left: 5px dotted blue;
+  border-right: 5px dashed green;
+  border-bottom: 5px groove pink;
+
+  border-radius: 50%; */
+  /* border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px; */
+/* } */
+
+
+/* h1{
+  color: red;
+  word-spacing: 50px;
+  letter-spacing: 30px;
+  line-height: 80px;
+
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy;
+  text-decoration-color: blue; */
+
+  /* text-decoration: underline 4px solid green;*/ /* for all the above 4properties we can use a single lined property like this */
+/* /* } */
+
+/* h2{
+  color: red;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 2px gray;
+} 
+
+p{
+  font-size: 100px;
+  font-weight: 900;
+  font-style: italic;
+  font-family: cursive;
+} */
+
+/* .box{
+  height: 500px;
+  width: 600px;
+  border: 2px solid;
+
+  background-color: aqua;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtp_BTIp-V1jAIaCYpg7WnBMBMTxiY43YcjAixfiIvw&s=10');
+
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+
+  background-position-x: left;
+  background-position-x: right;
+  background-position-x: center;
+
+  background-position-y: top;
+  background-position-y: bottom;
+  background-position-y: center;
+
+  background-position: center;
+
+  background-size: auto;
+  background-size: contain;
+  background-size: cover;
+} */
+
+ /* .flexContainer{
+  height: 600px;
+  width: 600px;
+  background-color: black;
+
+  display: flex; */
+
+  /* flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  flex-direction: column;
+  flex-direction: row; */
+
+  /* justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  justify-content: space-around;
+  justify-content: center; */
+
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items: baseline;
+  align-items: center; */
+
+  /* row-gap: 10px;
+  column-gap: 10px;
+  gap: 10px;
+  padding: 10px; */
+
+  /* flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
+  flex-wrap: wrap; */
+
+  /* align-content: center;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: space-between;
+  align-content: space-evenly;
+  align-content: space-around; */
+/* } */
+
+/* .flexItems{
+  height: 15%;
+  width: 15%;
+  background-color: red;
+  border: 2px solid white;
+} */
+
+/* .Item1{
+  flex-grow: 2;
+  flex-shrink: 2; */
+  /* order: 1; */
+/* }
+.Item2{
+  flex-grow: 3;
+  flex-shrink: 3; */
+  /* order: 2; */
+/* }
+.Item3{
+  flex-grow: 4;
+  flex-shrink: 4; */
+  /* order: 2; */
+/* } */
+
+/* .Item1{
+  font-size: 20px;
+}
+.Item2{
+  font-size: 35px;
+}
+.Item3{
+  font-size: 50px;
+}  */
+
+/* .gridContainer{
+  height: 95vh;
+  width: 95vw;
+  background-color: gray;
+
+  display: grid;
+
+  grid-template-rows: 32% 32% 32%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+
+}
+
+.gridItems{
+  border: 1px solid white;
+  background-color: aqua;
+}
+
+.sidebar{
+  background-color: green;
+  grid-row-start: 1;
+  grid-row-end: 4 ;
+}
+.header{
+  background-color: green;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.box8{
+  background-color: green;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+} */
+
+/* button{
+  transition-property: all;
+  transition-property: background-color;
+  transition-duration: 1.2s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+}
+
+button:hover{
+  transform: scale(1.5);
+  transform: translateX(200px);
+  transform: translateY(200px);
+  transform: translate(200px,200px);
+  transform: rotate(180deg);
+  transform: skew(20deg);
+
+  transform: translate(200px,200px) rotate(180deg) scale(1.5);
+
+  background-color: aqua;
+  color: blue;
+  border-radius: 20px;
+} */
+
+/* .box{
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  border-radius: 10px;
+  position: relative;
+
+  animation-name: boxMove;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+
+}
+
+@keyframes boxMove{
+  0%{
+    top: 0;
+    left: 0;     
+  }
+  25%{
+    top: 0;
+    left: 500px;
+  }
+  50%{
+    top: 500px;
+    left: 500px;
+  }
+  75%{
+    top: 500px;
+    left: 0px;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+  }
+} */
+
+/* mobile  */
+@media(max-width:600px){
+  body{
+    background-color: pink;
+  }
+}
+
+/* tablet  */
+@media(min-width:600px) and (max-width:1024px){
+  body{
+    background-color: yellow;
+  }
+}
+
+/* desktop  */
+@media (min-width: 1025px){
+  body{
+    background-color: aqua;
+  }
+}

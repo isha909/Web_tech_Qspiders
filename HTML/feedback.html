@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback form</title>
+</head>
+<body>
+  <form>
+    <h2>My Feedback form</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+    <br>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass">
+    <br><br>
+
+    <fieldset>
+    <legend>Please check all the emotions that apply to you:</legend>
+    <label for="angry">Angry</label>
+    <input type="checkbox" id="angry">
+    <br>
+    <label for="sad">Sad</label>
+    <input type="checkbox" id="sad">
+    <br>
+    <label for="happy">Happy</label>
+    <input type="checkbox" id="happy">
+    <br>
+    <label for="ambivalent">Ambivalent</label>
+    <input type="checkbox" id="ambivalent">
+    </fieldset>
+    <br>
+
+    <fieldset>
+    <legend>How satisfied were you with our service?</legend>
+    <label for="very">Very Satisfied</label>
+    <input type="radio" id="very" name="service">
+    <br>
+    <label for="satisfied">Satisfied</label>
+    <input type="radio" id="satisfied" name="service">
+    <br>
+    <label for="didnot">Didn't care</label>
+    <input type="radio" id="didnot" name="service">
+    <br>
+    <label for="dissatisfied">Dissatisfied</label>
+    <input type="radio" id="dissatisfied" name="service">
+    <br>
+    <label for="no">Very Dissatisfied</label>
+    <input type="radio" id="no" name="service">
+    </fieldset>
+    <br>
+
+    <label for="textarea">Further comments:</label>
+    <textarea id="textarea"></textarea>
+    <br>
+    <label for="file">Bio photo:</label>
+    <input type="file" id="file">
+    <br>
+
+    <label for="location">Location visited:</label>
+    <select id="location">
+      <option selected disabled>select location</option>
+      <option>Delhi</option>
+      <option>Gurugram</option>
+      <option>Noida</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,332 @@
+CSS:
+  CSS- cascading style sheet i.e. adding style sheet to the html doc 
+  -it is used to make the websites attractive
+  -it enhances user's experience
+  -it is developed by Haikon Wium Lie
+
+  CSS versions:
+    CSS1 --> 1996
+    CSS2 --> 1998
+    CSS3 --> 1998, 1999, 2011 --> latest
+    CSS4 --> 2014
+
+  Types:
+    1.Inline CSS --> applying css same line with style attribute //more powerful
+
+    2.Internal CSS --> applying css in head tag by writting style tag
+
+    3.External CSS --> seperate css file is created with .css extension and linked in html file //link and enter 
+
+    4.@import(url) --> used to import multiple css files inside one css file
+
+  if link tag is closer than style tag to tha targetted tag then external css is applied and vice versa
+
+----------------------------------------------------------------------------------------------------------------
+
+Selectors:
+  - are used to target a html element so that we can apply the properties
+
+  - Types:
+    1. Simple selector 
+    2. Combinator selector 
+    3. Attribute selector 
+    4. Pseudo class selector 
+    5. Pseudo element selector 
+
+    1. Simple selector:
+        - id selector (#)
+            - It is used to target an html element with a specific id attribute 
+            - Id value should always be unique
+            - symbol of id selector is # 
+
+        - className selector (.) 
+            - If we are tagetting an html element based on the class attribute it is known as class selector
+            - Symbol of class selector is .
+            - Multiple element can have same class value
+            - Single element can have multiple classes
+
+        - tagName or element selector
+            - targeting an html element based on the tag name is known as tagname selector 
+
+        - grouping selector
+            - targetting id selector, class selector, tagname selector together seperated by , is known as grouping selector
+
+        - universal selector (*) //always on top
+            - used to target complete html 
+            - Symbol of the universal selector is *
+            - Used at the top of the css file mostly it is used to remove default margin and padding
+
+            id > class > tagname
+
+    2. Combinator selector: A combinator selector is used to select html element based on there relationship with other elements.
+
+        - descendent selector
+            - It selects all elements that are inside another element no matter how deep they are in the html structure it select both direct and indirect children 
+
+        - child selector
+            - It selects only those elements that are direct children of a specified parent element
+            - It doesn't select deeper nested element 
+
+        - immediate/ adjacent sibling selector
+            -It selects an element that comes immediately after another specified element and shares the same parent it selects only the first next sibling 
+
+        - general sibling selector
+            - It selects all the elements that comes fter a specified element and shares the same parent it selects multiple siblings not just the first 
+
+    3. Attribute selector: An attribute selector is used to target an html element based on attribute 
+        - It is used to target an html element based on the html attributes or values of the attributes
+
+    4. Pseudo Class Selector: It is used to select an element based on its special state or condition
+        - it describes how an element behaves not what it is 
+        - it start with single colon (:)
+        - e.g. hover, focus, active, checked, first-child, last-child etc
+
+    5. Pseudo Element Selector: It is used to select an html element or used to style a specific part of an element 
+        - It allows you to style part of a content not the whole element
+        - it starts with double colon (::)
+        - e.g. before, after, first-line, first-letter etc 
+
+--------------------------------------------------------------------------------------------------------------------
+
+Units in CSS:
+    - It is used to define the size of an element and helps us to control the layout and spacing in our web pages.
+    - there are three types of units in css:
+        1. Relative unit
+        2. Absolute unit
+        3. Viewport unit
+
+    1. Relative unit:
+        - Relative units in css calculate dimensions based on another external value such as a parent element's size, the root element's font size, or the viewport's dimensions.
+        - e.g. %, em (element), rem(root element), vh, vw etc
+    
+    2. Absolute unit:
+        - An absolute unit in css is a fixed measurement unit that does not change based on the screen size, parent element, or user browser preferances.
+        - e.g. px, mm, cm etc 
+
+    3. Viewport unit:
+        - CSS viewport units are relative length measurements based entirely on the dimensions of the browser's visible window area (the viewport ).
+        - e.g. vw (viewport width), vh (viewport height), vmin, vmax, etc.
+
+------------------------------------------------------------------------------------------------------------------
+
+Element: Opening tag + closing tag + content
+    - There are three types of elements 
+        1. Block elements 
+        2. Inline elements
+        3. Inline Blocke elements
+
+    1. Block elements:
+        - Those element which occupy the complete width of the screen irrespective of there content.
+        - We can change the size of block element.
+    
+    2. Inline elements:
+        - Those element which occupies the width according to the content present inside it.
+        - We can't change the size of inline element.
+
+    3. Inline Block elements:
+        - Those element which is having the property of both block and inline element are known as inline block element.
+
+------------------------------------------------------------------------------------------------------------------
+
+Box Model:
+    - When we run html code inside the browser all the elements present inside the html will be represented as a rectangular box inside the browser, this representation is known as box model.
+
+    - It consists 4 parts:
+        1. Margin --> The space outside the border or the space between the elements is known as margin.
+        2. Border --> Outline of the content is known as border.
+        3. Padding --> Space between border and content is known as padding.
+        4. Content 
+
+    - Properties of box model:
+        - box-sizing: border-box;
+        - box-sizing: content-box;
+
+----------------------------------------------------------------------------------------------------------------
+
+Position in CSS:
+    - The position property in CSS defines how an HTML element is placed on a web page. It works alongside the offset coordinates (top, bottom, right, left) and z-index.
+
+    position: static(default);
+              relative
+              absolute
+              fixed
+              sticky
+        
+        position: static; -->
+            - In CSS, position: static; is the default positioning method for every HTML element, meaning the element automatically confirms to the normal.
+
+        position: relative; -->
+            - In CSS, position: relative; keeps an element in its normal spot on the page but allows you to move it around without affecting the elements around it.
+
+        position: absolute; -->
+            - The element is taken out of the normal page flow and you can place it exactly where you want using properties like top, left, right, and bottom.
+            - It does not stay in its original place
+            - It moves relative to its nearest positioned parent
+            - It no such parent exists -> It moves relative to the whole page (body)
+
+        position: fixed; -->
+            - It means the element stays in the same position on the screen, even when the user scrolls the page.
+            - It keeps an element locked to a specific spot on the screen, regardless of scrolling.
+
+        position: sticky; -->
+            - It means an element behaves like relative at first, but when you scroll to a certain point, it becomes fixed and sticks to the screen.
+            - It lets an element scroll normally until it reaches a specified position, when it sticks there like a fixed element.
+
+----------------------------------------------------------------------------------------------------------------
+
+Flex:
+    - x- axis or main axis
+    - y axis or cross axis
+    - flex refers to Flexbox (Flexible Box Layout) which layout model used to easily arrange, align, and distribute space among items in a row or a column. It makes web pages responsive by dynamically expanding or shrinking items.
+
+        1. display:flex; -->
+            Applying display: flex; to an HTML element turns it into a flex container. Its immediate child elements automatically become flex items.
+        
+        2. flex-direction: -->
+            flex-direction is a css property that sets the direction items flow inside a flexbox container. 
+            - It decides if items stack in a row or a column.
+
+        3. justify-content: -->
+            This property is used to arrange and space out items horizontally inside a container.
+
+            Note: If you change your layout's direction to a column using flex-direction: column;, justify-content flips and controls the vertical arrangement instead.
+
+            justify-content : flex-start / flex-end / center
+                              space-around / space-between / space-evenly
+
+        4. align-item: -->
+            This property controls how items inside a container line up 
+            up-and-down (vertically)
+
+            Note: If you change your layout's direction to column, these directions swap, but for standard rows, just remember: align-items is your vertical control
+
+            align-item: flex-start / flex-end / center
+
+        5. gap -->
+            - Gap in css is a property that creates space between items inside a layout. 
+            - It acts like an automatic invisible divider between boxes, preventing them from touching each other.
+
+        6. flex-wrap: -->
+            flex-wrap is a css property that decides whether your items should stay on one single line or drop down to a new line when they run out of space.
+
+            flex-wrap: no-wrap / wrap / wrap-reverse
+
+        7. align-content: -->
+            - controls the spacing between multiple rows or columns of flex items
+            - decides how extra space is distributed when your items wrap in more than one line.
+
+    Flex-Item properties:
+        1. Order:
+            - The order property in css flexbox lets you change the visual order of your items without touching your HTML code. It rearranges items by sorting them from the lowest number to the highest number.
+            - The default value of order is 0.
+
+        2. Flex-grow:
+            - Flex-grow is a css property that dictates how a flex item expands to fill any empty space inside its parent container.
+            - Negative values are invalid.
+            - The default value of flex-grow is 0.
+
+        3. Flex-shrink:
+            - Controls how much an item shrinks when there isn't enough space to fit all items in a container.
+            - The default value of flex-shrink is 1.
+
+----------------------------------------------------------------------------------------------------------------
+
+CSS Grid:
+    - CSS Grid is highly powerful two dimensional layout system built directly into css. Unlike Flexbox, which primarily handles content in a single direction (either rows or columns). CSS Grid let you align and arrange elements in both horizontal rows and vertical coumns simultaneously.
+
+    - It works on a parent- child relationship: It turns parent element into a grid container and its direct children automatically becomes grid items.
+
+    1. display : grid
+        It is a CSS rule that turns an HTML element into a grid container, letting you arrange its content into two. It gives you total control over web layouts by letting you work in two dimensions simultaneously: horizontally and vertically.
+
+    2. grid-template-rows :
+        The grid-template-rows property in CSS tells the browser how many rows a grid layout should have and how tall each row should be.
+
+    3. grid-template-columns :
+        It is a CSS property that tells the browser how many columns a grid should have and how wide each column should be.
+
+    4. grid-row-start / grid-row-end
+        grid-row-start and grid-row-end tell a grid item exactly which horizontal lines to start and stop at, which controls its vertical position and height.
+
+    5. grid-column-start / grid-column-end
+        grid-column-start and grid-column-end are CSS properties that tell a specific item inside a grid container where to start and where to stop horizontally.
+
+        - grid-template-rows: repeat(3, 1fr) --> When we have to create multiple rows then we can repeat the fraction, we can use multiplerepeat if we have different sizes
+
+        - grid-template-columns: repeat(3, 1fr) --> When we have to create multiple columns then we can repeat the fraction, we can use multiple repeat if we have different sizes
+
+        - grid-row-start: 1; and grid-row-end: 4; --> can be written together as grid-row: 1/4
+
+        - grid-column-start: 1; and grid-column-end: 4; --> can be written together as grid-column: 1/4
+
+        fontawesome cdn 
+        fontawesome.com 
+        fn+F12 --> for myntra logo
+
+---------------------------------------------------------------------------------------------------------------
+
+Transition in CSS:
+    CSS transition is a tool used to make changes to a website's styles happen smoothly over time instead of instantly.
+
+        1. transition-property:
+            transition-property in CSS tells which CSS property you want to animate smoothly.
+
+        2. transition-duration:
+           transition-duration tells the browser how much time a CSS transition should take, from the start to the end of the change.
+
+        3. transition-timing-function:
+            transition-timing-function defines the speed curve of a CSS transition. It tells the browser how the transition progresses from the start to the end , such as starting slowly, ending slowly or moving at a constant speed.
+                linear --> moves at same speed
+                ease --> slow -> fast -> slow (default)
+                ease-in --> slow at first then speeds up
+                ease-out --> fast at first then slow downs
+                ease-in-out --> slow -> fast -> slow 
+
+        4. transition-delay:
+            transition-delay specifies how long the browser should wait before starting the transition.
+
+---------------------------------------------------------------------------------------------------------------
+
+Transform:
+    The transform property is used to change the position, size, rotation or shape of an element without affecting the layout of other elements.
+
+        1. transform:translateX() moves an element horizontally (left or right) along X axis.
+        2. transform:translateY() moves an element vertically (up or down)along Y axis.
+        3. transform:translate() moves an element bith horizontally and vertically at the same time.
+        4. transform:rotate() rotates an element clockwise or counterclockwise around its center.
+        5. transform:skew() slants (tilts) an element along the X-axis, Y-axis or both without rotating it.
+
+---------------------------------------------------------------------------------------------------------------
+
+Animation:
+    A  CSS animation is a way to make webpage elements change smoothly from one style to another style over time. Instead of a sudden jump, the browser automatically creates a smooth, moving transition.
+
+    To build an animation, you only need two pieces of code:
+
+        1. The @keyframes Rule: This is your script. It defines what the element looks like at specific points in time (e.g. at the start, middle and end).
+
+        2. The animation Properties: This is your director. It tells a specific HTML element which script to play, how long to run and whether to loop.
+
+        ==> animation-name: is a CSS property used to choose which specific movement or visual change you want to apply to an HTML element.
+
+        ==> animation-duration: is the property that tells a web browser exactly how many seconds or milliseconds an animation should take to finish one full cycle.
+
+        ==> animation-delay: is a property that tells a web browser how long to wait before starting an animation.
+
+        ==> animation-timing-function: sets the speed curve of an animation, controlling how it accelerates and decelerates over its duration.
+
+        ==> animation-iteration-count: is a CSS property that tells an animation how many times to play or loop before it stops completely.
+
+        ==> animation-direction: determines whether your animation plays forward, backward, or cycles back and forth.
+            The 4 main values: normal / reverse / alternate / alternate reverse
+    
+-------------------------------------------------------------------------------------------------------------
+
+Media Query:
+    - A media query is like an "IF statement" for your website's design. It tells the browser: "If the screen is a certain size, Then change the way the website looks.
+
+    - It is the main tool developers use to make websites look good on phones, tablets and desktops without making completely seperate versions of the site.
+
+        ==> min-width means "this size or larger" (greater than or equal to) and max-width means "up to this size" (less than or equal to)
+
+        ==> min-height and max-height in CSS media queries look at the vertical height of the browser window and decide when to apply your styles based on that size.4

@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color:antiquewhite;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  border-radius: 10px;
+}

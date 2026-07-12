@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock{
+  height: 15px;
+  width: 40%;
+  background-color: white;
+  border-radius: 30px;
+  animation-delay: 1s;
+  position: relative;
+
+  animation-name: clockMove;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes clockMove{
+  from{
+    transform: rotate(-360deg);
+  }
+  to{
+
+  }
+}
