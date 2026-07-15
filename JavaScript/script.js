@@ -217,3 +217,234 @@
 // ~ falsy values: 0 , false , null , undefined , NaN , "", 0n , -0
 
 // ? if-else
+  // if(""){
+  //   console.log("truthy value");
+  // }
+  // else{
+  //   console.log("falsy value");
+  // }
+
+// ? else if
+// let a = 120;
+// let b = 230;
+// let c = 345;
+
+// if(a > b && a > c){
+//   console.log(`${a} is largest number`);
+// }
+
+// else if(b > c && b > a){
+//   console.log(`${b} is largest number`);
+// }
+
+// else{
+//   console.log(`${c} is largest number`);
+// }
+
+// ? switch
+// let day = "MON";
+// switch(day){
+//   case "MON":
+//     console.log("Monday ");
+//     break;
+//   case "TUE":
+//     console.log("Tuesday ");
+//     break;
+//   case "WED":
+//     console.log("Wednesday ");
+//     break;
+//   case "THUR":
+//     console.log("Thursday ");
+//     break;
+//   case "FRI":
+//     console.log("Friday ");
+//     break;
+//   case "SAT":
+//     console.log("Saturday ");
+//     break;
+//   case "SUN":
+//     console.log("Sunday ");
+//     break;
+//   default:
+//     console.log("default");
+//     break;
+// }
+
+// ? ternary operator
+// let a = 100;
+// let b = 300;
+// let c = (a > b ? `${a} is greater` : `${b} is greater`);
+// console.log(c);
+
+// ! Loops 
+
+// & for 
+// for(let i = 0; i <= 10 ; i++){
+//   console.log(i);
+// }
+
+// & while
+// let j = 0;
+// while(j <= 10){
+//   console.log(j);
+//   j++;
+// }
+
+// & do-while
+// let k = 0;
+// do{
+//   console.log(k);
+//   k++;
+// } while(k<=10);
+
+// ! Output methods in JS
+
+// let no1 = parseInt(prompt("Enter number 1"));
+// let no2 = parseInt(prompt("Enter number 2"));
+// let no3 = (no1 + no2);
+// console.log(no3);
+// console.log(typeof no1);
+// console.log(typeof no2);
+// console.log(typeof no3);
+
+// ! Function
+
+// ~ Named function
+
+// function test(a,b){
+//   console.log(a+ b)
+// }
+// test(100,200)
+
+// ~ Anonymous function
+
+// fuction(){
+      
+// }
+
+// ~ Arrow Function
+// let fun = ()=>{
+//   console.log("Arrow function")
+// }
+// fun()
+
+// & property 1
+// let fun1 =a=>{
+//   console.log(a)
+// }
+// fun1(100)
+
+// & property 2
+// let fun2 = ()=>
+//   console.log("Statement 1")
+// fun2()
+
+// & property 3
+// let fun1 = data => data
+// console.log(fun1(1000));
+
+// ~ IIFE Function
+// (function(){
+//   console.log("IIFE")
+// })()
+
+// (()=>{
+//   console.log("IIFE")
+// })()
+
+// ~ Function with expression
+// let ex1 = function(){
+//   console.log("Function with expression");
+// }
+
+// let ex2 = ()=>{
+//   console.log("Function with expression");
+// }
+
+// ex1()
+// ex2()
+
+// ~ Higher order function
+// function HOF(a,b,callback){
+//   callback(a,b)
+// }
+// HOF(100,200,function(a,b){
+//   console.log(a+b);  // ~ Callback function
+// })
+
+// ~ Recursive function
+// function findFact(n){
+  // base case
+//   if(n==1){
+//     return 1
+//   }
+//   return n * findFact(n-1)
+// }
+// let res = findFact(5)
+// console.log(res);
+
+// ~ Generative function
+// function* genFun(){
+//   yield "data 1"
+//   yield "data 2"
+//   yield "data 3"
+//   yield "data 4"
+//   return "data 5"
+// }
+// let res = genFun()
+// console.log(res.next());
+// console.log(res.next());
+// console.log(res.next());
+// console.log(res.next());
+// console.log(res.next());
+
+// ~ Pure function
+// function pure(a,b){
+//   console.log(a*b);
+// }
+// pure(100,2)
+// pure(100,2)
+// pure(100,2)
+
+// ~ Impure function
+// let count = 1
+// function impure(a,b){
+//   console.log(a*b*count);
+//   count++
+// }
+// impure(100,2)
+// impure(100,2)
+// impure(100,2)
+
+// ! Default Parameter
+// function abc(a=100, b = 200){
+//     console.log(a+b)
+// }
+// abc()
+// abc(500, 500)
+// abc(300)
+
+// ! Arguments
+// function sum(){
+//   console.log(arguments [0]);
+//   console.log(arguments [1]);
+//   console.log(arguments [0] + arguments [1]);
+// }
+// sum(100,200)
+
+// ! JavaScript Currying
+// function sum(a){
+//   console.log("Function 1");
+//   return function(b){
+//     console.log("Function 2");
+//     return function(c){
+//       console.log("Function 3");
+//       console.log(a+b+c);
+//     }
+//   }
+// }
+// let fun2 = sum()
+// let fun3 = fun2()
+// fun3()
+
+// sum(100)(200)(300)
