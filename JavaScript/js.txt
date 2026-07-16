@@ -10,14 +10,14 @@ JavaScript:
 History of JS:
   - It is developed in September 1995 by Brinden Eich in only 10 days.
 
-  - Initially it was named as "Mocha" then the name changes into "livescript", again for the marketing purpose the name changes into "Javascript" because at that time Java was very popular language. To get the popularity from java, the owner of the java i.e. Sun Microsystem and owner of the JavaScript i.e. Netscape Corporation together they made an agreement and the name changes into javascript. Again in 1997, Javascript became EgmaScript. Egma stands for "European Computer Manufacture Association" then different versions of egma script were released. The latest version of egma script is egma script 2026.
+  - Initially it was named as "Mocha" then the name changes into "livescript", again for the marketing purpose the name changes into "Javascript" because at that time Java was very popular language. To get the popularity from java, the owner of the java i.e. Sun Microsystem and owner of the JavaScript i.e. Netscape Corporation together they made an agreement and the name changes into javascript. Again in 1997, Javascript became EcmaScript. Ecma stands for "European Computer Manufacture Association" then different versions of ecma script were released. The latest version of ecma script is ecma script 2026.
 
-  - The famous versions of egma script are:
+  - The famous versions of ecma script are:
     ES6
     ES7
     ES9
 
-  - Features of egma script:
+  - Features of ecma script:
     1. let keyword
     2. const keyword
     3. arrow function, promises, symbols 
@@ -99,6 +99,11 @@ Data Type:
       vii. symbol --> assign uniques identifier
 
   2. Non- primitive (mutable) --> can be changed
+      i. Function
+      ii. Array
+      iii. Object
+
+falsy values: 0 , false , null , undefined , NaN , ""(empty string), 0n , -0
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -147,7 +152,7 @@ JS Engine:
 
   JIT compiler:
     - JIT  = Just-In-Time compiler
-    - In V8, the JIT compiker is calle TurboFan.
+    - In V8, the JIT compiler is called TurboFan.
 
     - JIT compiler:
       - Takes frequently used ("hot") code
@@ -179,7 +184,7 @@ Scopes:
     1. Global: If you have declared any variable outside the block and function by using var keyword, then the scope of variable is in the global scope.
     e.g. var a = 100;
 
-    2. Script Scope: If you have declared any variable outside the block and function by using let and const keywodd then the scope of variable is in the script scope.
+    2. Script Scope: If you have declared any variable outside the block and function by using let and const keyword then the scope of variable is in the script scope.
     e.g. let b = 200;
         const c = 300;
 
@@ -194,7 +199,7 @@ Hoisting:
 
   - It is the default js behaviour that moves all the variable declaration and function declaration to the top of their scope 
 
-  - If we are trying to hoist the variable theat is declared by using var keyword then it will give undefined
+  - If we are trying to hoist the variable that is declared by using var keyword then it will give undefined
 
   - If we are trying to hoist a variable that is declared by using let and const then the output will be uncaught reference error because the variables went into a dead zone which is known as TDZ (Temporal Dead Zone).
 
@@ -333,7 +338,7 @@ Functions:
 
   10. Generative function:
     - It is a special type of function which can pause and resume its execution.  
-    - yield: It is a keyword whic is used to pause the execution of the egnerative function. 
+    - yield: It is a keyword which is used to pause the execution of the generative function. 
     - next(): It is a method which is used to resume the execution of the generative function. It returns an object which contains two properties:
       1. value: data which is given by yield keyword
       2. done: It stores the boolean value which specifies whether the execution of generative function is completed or not.
@@ -422,4 +427,3 @@ Functions:
     - Currying is a functional programming technique that transforms a function taking multiple arguments into a sequence of nested functions, each taking a single argument. Instead of evaluating f(a,b,c) all at once
     currying decomposes it to execute as f(a)(b)(c).
 
-    
