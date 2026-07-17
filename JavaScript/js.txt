@@ -398,7 +398,7 @@ Functions:
       abc(500, 500)
       abc(300)
 
-  Arguments:
+  Arguments object:
     - It is a default array like object present in the non arrow function which allows us to access all the arguments passed while calling the function without the parameters.
 
     - e.g.
@@ -427,3 +427,155 @@ Functions:
     - Currying is a functional programming technique that transforms a function taking multiple arguments into a sequence of nested functions, each taking a single argument. Instead of evaluating f(a,b,c) all at once
     currying decomposes it to execute as f(a)(b)(c).
 
+  Function Hoisting:
+    - It is possible in only non arrow function. 
+    - e.g.
+      abc()
+      function abc(){
+        console.log("Function Hoisting");
+      }  //Function Hoisting
+
+---------------------------------------------------------------------------------------------------------------
+
+String:
+  - Sequence of characters
+   
+  - Ways of creating a string:
+    1. Literal's Way:
+      let str = "qwertyu"
+      console.log(str)
+      console.log(typeof str)
+      
+    2. Literal's way:
+      let str = 'qwertyu'
+      console.log(str)
+      console.log(typeof str)
+
+      console.log("JS doesn't support OOP's)
+      console.log("This is 'JS' session")
+
+    3. Template literals
+      Advantages: 
+      i. We can create multi line string.
+      ii. String interpolation: Embedding variables inside a string is known as string interpolation 
+
+      let str = `This
+      is
+      JS`
+      console.log(str)
+      console.log(typeof str)
+
+      let subj = "JS"
+      console.log(`This is ${subj} class`)
+
+    4. Typecasting
+      let str = String(true)
+      console.log(str)
+      console.log(typeof str)
+
+  - Property of String:
+    length
+    let str = "qwertyu"
+    console.log(str.length)
+
+  - Methods of string:
+    1. at() : It accepts index and find the character present at that index. It supports negative value.
+      e.g console.log(str.at(-2));
+
+    2. charAt() : It accepts index and find the character present at that index. It doesn't supports negative value.
+      e.g console.log(str.charAt(-2));
+
+    3. charCodeAt() : It accepts index value and returns the ascii value of that character present at that index.
+      e.g. console.log(str.charCodeAt(5));
+
+    4. property access way to get character from string.
+      e.g console.log(str[0]);
+
+    5. slice(starting index , ending index --> excluded) : It is used to extract sequence of characters. It accepts two arguments starting index and ending index.
+
+      e.g let str = "A quick brown fox jumps over the lazy dog."
+          console.log(str.slice(2,7));
+          console.log(str.slice(2));
+          console.log(str.slice(0,-7));
+          console.log(str.slice(-7,2));
+          console.log(str.slice(-2,-7));
+          console.log(str.slice(-7,-2));
+
+    6. substring() : It accepts two arguments starting index and ending index and return the sequence of characters 
+      - negative values are converted into 0
+      - if starting index is greater than ending index then values are swapped.
+
+      e.g. let str = "A quick brown fox jumps over the lazy dog."
+          console.log(str.substring(2,7));
+          console.log(str.substring(2));
+          console.log(str.substring(0,-7));
+          console.log(str.substring(-7,2));
+          console.log(str.substring(-2,-7));
+          console.log(str.substring(-7,-2)); 
+
+    7. toUpperCase() : It converts the string into upper case.
+      e.g. let str = "A quick brown fox jumps over the lazy dog."
+          console.log(str.toUpperCase());
+
+    8. toLowerCase() : It converts the stribg into lowercase.
+      e.g. let str = "A quick brown fox jumps over the lazy dog."
+          console.log(str.toLowerCase());
+
+    9. padStart() : It is used to add the current string with a given string at the start of the string. It accepts arguments i.e. maxlength , "newString that we wants to add".
+      e.g. let str = "JAVA";
+          console.log(str.padStart(10,"A"))
+
+    10. padEnd() : It is used to add the current string with a given string at the end of the string.
+      e.g. let str = "JAVA";
+          console.log(str.padEnd(10,"A"))
+
+    11. match() : Matches a string with regular expression and returns an array containing the results of that search.
+      e.g.  let str = "Isha is a good girl. Isha loves mountains"
+           console.log(str.match("Isha"))  //returns regular expression 
+           console.log(str.match("Muskan"))  //null
+    
+    12. search() : Returns the index of the first matching substring. 
+      e.g.  let str = "Isha is a good girl. Isha loves mountains"
+           console.log(str.match("Isha"))  // 0 --> index  
+           console.log(str.match("Muskan"))  // -1
+
+    13. trim() : It removes extra whitespaces from both the ends start as well as end of the string.
+        trimStart() : It removes extra whitespaces from the start of the string.
+        trimEnd() : It removes extra whitespaces from the end of the string.
+
+        e.g. let userName = "   isha1234    "
+          console.log(username.trimStart())  //isha1234    
+          console.log(username.trimEnd())   //     isha1234
+          console.log(username.trim())   //isha1234 
+
+    14. replace() : It replaces the first matching substring in the string. 
+        replaceAll() : It replaces all the matching substrings in the string.
+
+        e.g. let str = "Isha is a good girl. Isha loves mountains"
+        console.log(str.replace("Isha" , "Muskan"))
+        console.log(str.replaceAll("Isha" , "Muskan"))
+
+    15. concat() : It is used to merge two or more string and returns a new string. 
+
+      e.g. let str = "Isha"
+           let str1 = "Muskan"
+           console.log(str.concat(str1))
+
+    16. repeat() : Returns a string value that is made from count cpoies appended together. If count is 0, the empty string is returned.
+
+      e.g. console.log(str.repeat(5))
+
+    17. indexOf() : It returns the index of first matching substring or -1 if not present. It accepts two arguments i.e. "substring" and "position" --> optional 
+
+      e.g. let str = "Isha is a good girl. Isha loves mountains"
+            console.log(str.indexOf("Isha"))
+
+    18. lastIndexOf() : Returns the last occurence of a substring in the string or -1 if it is not present.
+
+      e.g. let str = "Isha is a good girl. Isha loves mountains"
+            console.log(str.lastIndexOf("Isha"))
+
+    19. includes() : It returns the boolean value i.e. true of false, checks whether substring is present in the string or not. 
+
+      e.g. let str = "Isha is a good girl. Isha loves mountains"
+            console.log(str.includes("Isha"))

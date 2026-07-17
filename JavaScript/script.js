@@ -448,3 +448,53 @@
 // fun3()
 
 // sum(100)(200)(300)
+
+// & Function Hoisting
+// abc()
+// function abc(){
+//   console.log("Function Hoisting");
+// }
+
+// ! String
+// ? Literal's Way:
+      // let str = "qwertyu"
+      // console.log(str)
+      // console.log(typeof str)
+
+// ? Literal's way:
+      // let str = 'qwertyu'
+      // console.log(str)
+      // console.log(typeof str)
+
+      // console.log("JS doesn't support OOP's)
+      // console.log("This is 'JS' session")
+
+// ? Template literals:
+      // let str = `This
+      // is
+      // JS`
+      // console.log(str)
+      // console.log(typeof str)
+
+      // let subj = "JS"
+      // console.log(`This is ${subj} class`)
+
+// ? Typecasting
+      // let str = String(true)
+      // console.log(str)
+      // console.log(typeof str)
+
+// ~ Methods of string
+
+// let str = "qwertyuio"
+// console.log(str.at(4));
+// console.log(str.at(-2));
+// console.log(str.charAt(3));
+// console.log(str.charAt(-3));
+// console.log(str.charCodeAt(5));
+// console.log(str[0]);
+
+// let name = prompt("Enter your name")
+// let phoneNo = prompt("Enter your phone number")
+// let pass = prompt("Enter password")
+// console.log(name.substring(0,4) + "@" + phoneNo.substring(0,3) + pass.substring(0,2));
