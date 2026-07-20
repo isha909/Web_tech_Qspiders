@@ -135,7 +135,7 @@ JS Engine:
       This makes it easier for the engine to understand what the code is supposed to do.
 
   Interpreter:
-    - Ther interpreter checks the code line by line and converts it into bytecode.
+    - The interpreter checks the code line by line and converts it into bytecode.
     - In chrome's V8 engine, this interpreter is caller Ignition.
 
     - Its goal:
@@ -163,7 +163,7 @@ JS Engine:
 -----------------------------------------------------------------------------------------------------------------
 
 Type Casting:
-  - Conversion of one data type into another data type is knowm as type casting.
+  - Conversion of one data type into another data type is known as type casting.
 
   - There are two types of typecasting in javascript:
     1. Implicit typecasting (type cohersion) -->
@@ -188,7 +188,7 @@ Scopes:
     e.g. let b = 200;
         const c = 300;
 
-    3. Local Scope/ Function scope: If the variables are declared by either using var , let or const then the scopes of the variables is in the local scope which means variables. 
+    3. Local Scope/ Function scope: If the variables are declared by either using var , let or const inside a function then the scopes of the variables is in the local scope which means variables can only be accessed within the function. 
 
     4. Block Scope: If the variables are declared by using var  , let and const inside the block. Then only the var variable can be accessible outside the block. Block scope restrict the variable created by using let and const keyword from accessing outside it. 
 
@@ -267,7 +267,7 @@ Functions:
     12. Impure function 
 
   1. Named function:
-    - Function which is having some name is caled name function.
+    - Function which is having some name is called name function.
     - Arguments: Data which is passed while calling the function is called arguments.
     - Parameter: Function accept arguments inside the paranthesis is called a parameter.
 
@@ -297,7 +297,7 @@ Functions:
 
       2. If there is only one statement then there is no need of using curly brackets but if there are multiple statements and we have not used curly brackets then output will be shuffled.
 
-      3. If there is only one statement which is the return statement then there is no need of using curly brackets as well as return keyword. It is also known as impkicit return.
+      3. If there is only one statement which is the return statement then there is no need of using curly brackets as well as return keyword. It is also known as implicit return.
 
   4. Function with expression:
     - When we are storing a function as a value inside a variable it is known as function with expression and the stored function is known as first class function or first citizen function.
@@ -408,6 +408,8 @@ Functions:
         console.log(arguments [0] + arguments [1]);
       }
       sum(100,200)
+
+      If we use arrow function then we'll get uncaught reference error.
 
   Nested Function:
     - Function present inside a function is known as nested function 
@@ -561,7 +563,7 @@ String:
            let str1 = "Muskan"
            console.log(str.concat(str1))
 
-    16. repeat() : Returns a string value that is made from count cpoies appended together. If count is 0, the empty string is returned.
+    16. repeat() : Returns a string value that is made from count copies appended together. If count is 0, the empty string is returned.
 
       e.g. console.log(str.repeat(5))
 

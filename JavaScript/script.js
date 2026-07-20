@@ -176,7 +176,7 @@
 // let b = 200;
 // const c = 300;
 
-// ? Local Scope/ Function scope: If the variables are declared by either using var , let or const then the scopes of the variables is in the local scope which means variables. 
+// ? Local Scope/ Function scope: If the variables are declared by either using var , let or const inside a function then the scopes of the variables is in the local scope which means variables can only be accessed within the function. 
 
 // debugger 
 // function abc(){
@@ -487,6 +487,8 @@
 // ~ Methods of string
 
 // let str = "qwertyuio"
+// console.log(str.repeat(5))
+// console.log(str.includes("Isha"))
 // console.log(str.at(4));
 // console.log(str.at(-2));
 // console.log(str.charAt(3));
@@ -498,3 +500,9 @@
 // let phoneNo = prompt("Enter your phone number")
 // let pass = prompt("Enter password")
 // console.log(name.substring(0,4) + "@" + phoneNo.substring(0,3) + pass.substring(0,2));
+
+
+// var a = 100
+// b = 200
+// console.log(a);
+// console.log(b);
