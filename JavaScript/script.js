@@ -506,3 +506,54 @@
 // b = 200
 // console.log(a);
 // console.log(b);
+
+// ! Array
+
+// ~ Create 
+// let arr = [10,20,30,40]
+// let arr2 = [1,"abc", true, 123n, null, undefined, Symbol("abc"),function(){console.log("Function")}, ["HTML" ,"CSS" , "JS"], {}]
+
+// ~ Read
+// console.log(arr2[1])
+// arr2[7]()
+// console.log(arr2[8][1])
+
+// ~ Update
+// console.log(arr2)
+// arr2[4] = "newData"
+
+// arr2[10] = "newData2"
+// console.log(arr2);
+
+// ~ Delete
+// console.log(arr2);
+// delete arr2[0]
+// delete arr2[1]
+// console.log(arr2);
+
+// ! Methods of array
+// & slice
+// let arr = [10,20,30,40,50]
+// let newArr = arr.slice(1,3)
+// console.log(newArr)
+// console.log(arr)
+
+// & splice
+// let arr = [10,20,30,40,50]
+// let newArr = arr.splice(1,0,"newData")
+// console.log(newArr)
+// console.log(arr)
+
+// & reverse
+// let arr = [10,20,30,40,50]
+// let newArr = arr.reverse()
+// console.log(newArr);
+// console.log(arr);
+
+// ~ string reverse 
+let arr = "qwertyuioplkdsazxcbnm"
+let newArr = arr.split("")
+console.log(newArr);
+let newArr2 = newArr.reverse()
+console.log(newArr2);
+console.log(newArr2.join(""));
