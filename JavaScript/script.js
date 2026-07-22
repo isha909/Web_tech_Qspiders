@@ -551,9 +551,92 @@
 // console.log(arr);
 
 // ~ string reverse 
-let arr = "qwertyuioplkdsazxcbnm"
-let newArr = arr.split("")
-console.log(newArr);
-let newArr2 = newArr.reverse()
-console.log(newArr2);
-console.log(newArr2.join(""));
+// let arr = "qwertyuioplkdsazxcbnm"
+// let newArr = arr.split("")
+// console.log(newArr);
+// let newArr2 = newArr.reverse()
+// console.log(newArr2);
+// console.log(newArr2.join(""));
+
+// & flat
+// let arr = [1,2,3,[[[[4,[[[8,9,0]]]]]]]]
+// console.log(arr.flat(3));
+// console.log(arr.flat(Infinity));
+
+// & some
+// let arr = [1,2,3,4,5]
+// let result = arr.some((val)=>{
+//       return val > 3
+// })
+// console.log(result);
+
+// & every
+// let arr = [1,2,3,4,5]
+// let result = arr.every((val)=>{
+//       return val > 3
+// })
+// console.log(result);
+
+// & push
+// let arr = [10,20,30]
+// console.log(arr);
+// let res = arr.push(40,50)
+// console.log(res);
+// console.log(arr);
+
+// & pop
+// let arr = [10,20,30]
+// let res = arr.pop()
+// console.log(res);
+// console.log(arr);
+
+// & shift 
+// let arr = [10,20,30]
+// let res = arr.shift()
+// console.log(res);
+// console.log(arr);
+
+// & unshift
+// let arr = [10,20,30]
+// let res = arr.unshift("Data1", "data2")
+// console.log(res);
+// console.log(arr);
+
+// & map
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let res = arr.map((m)=>{
+//       return m+ " hii"
+// })
+// console.log(res);
+
+// & filter
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let res = arr.filter((m)=>{
+//       return m>5
+// })
+// console.log(res);
+
+// & reduce
+// let arr = [1,2,3,4,5,6,7,8,9]
+// let res = arr.reduce((acc,currValue)=>{
+//       return acc+currValue
+// },100)
+// console.log(res);
+
+// ! Object
+let obj = {
+      id : 1,
+      objName : "abc",
+      sal : 98765,
+      isDev : true,
+      isTester : null,
+      isMarried : undefined,
+      printName : function(){
+            console.log("Function");
+      },
+      skills : ["HTML" , "CSS" , "JS"],
+      address : {
+            city : "delhi",
+            street : 'A'
+      }
+}
