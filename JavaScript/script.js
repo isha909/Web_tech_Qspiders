@@ -624,19 +624,153 @@
 // console.log(res);
 
 // ! Object
-let obj = {
-      id : 1,
-      objName : "abc",
-      sal : 98765,
-      isDev : true,
-      isTester : null,
-      isMarried : undefined,
-      printName : function(){
-            console.log("Function");
-      },
-      skills : ["HTML" , "CSS" , "JS"],
-      address : {
-            city : "delhi",
-            street : 'A'
-      }
-}
+
+// ~ literal's way 
+
+// let obj = {
+//       id : 1,
+//       objName : "abc",
+//       sal : 98765,
+//       isDev : true,
+//       isTester : null,
+//       isMarried : undefined,
+//       printName : function(){
+//             console.log("Function");
+//       },
+//       skills : ["HTML" , "CSS" , "JS"],
+//       address : {
+//             city : "delhi",
+//             street : 'A'
+//       }
+// }
+
+// & Read
+// console.log(obj);
+// console.log(obj.objName);
+// console.log(obj.isTester);
+// console.log(obj.skills[1]);
+// console.log(obj.address.city);
+// obj.printName()
+
+// & Update
+// console.log(obj);
+// obj.isTester = false
+// console.log(obj);
+
+// obj.newProp = "newValue"
+// console.log(obj);
+
+// & Delete
+// delete obj.isTester
+// delete obj.isDev
+// console.log(obj);
+
+// ~ constructor's way
+
+// let obj = new Object({id : 1 , objName : "abc"})
+// console.log(obj);
+
+// ~ Constructor's way for creating an object
+// function ObjConstructor(id , name){
+//       this.empId = id 
+//       this.empName = name 
+//       this.sal = 234556
+// }
+// let obj = new ObjConstructor(1 , "abc")
+// console.log(obj);
+
+// ! this keyword
+// console.log(this);
+
+// function abc(){
+//       "use strict"
+//       console.log(this);
+// }
+// abc()
+
+// "use strict"
+// b = 200;
+// console.log(b);
+
+
+// "use strict"
+// var empName = "abc"
+
+// let obj = {
+//       empName : "xyz",
+//       val : this,
+//       printName : function(){
+//             "use strict"
+//             console.log(this);
+//       }, 
+//       printName2 : ()=>{
+//             "use strict"
+//             console.log(this);
+//       }
+// }
+
+// console.log(obj.val);
+// obj.printName()
+// obj.printName2()
+
+// ! Methods
+// let obj = {
+//       id : 1, 
+//       objName : "asdf",
+//       sal : 23456
+// }
+
+// ~ Object.keys() : It returns all the keys present inside an object in the form of array.
+// console.log(Object.keys(obj));
+
+// ~ Object.values() : It returns all the values present inside an object in the form of array.
+// console.log(Object.values(obj));
+
+// ~ Object.entries() : It returns both key and value pars in the form of nested / multi-dimensional array.
+// console.log(Object.entries(obj));
+
+// ~ Object.fromEntries() : It accepts multi- dimensional array and converts it into object.
+// console.log(Object.fromEntries([["id",1],["objName","qwerty"]]));
+
+// ~ Object.freeze() : Prevents the modification of existing property and prevents the addition on new properties, prevents the deletion of existing properties.
+
+      // Object.freeze(obj)
+      // ? update --> not possible
+      // obj.objName = "newVal"
+      // ? addition --> not possible
+      // obj.newProp = "newVal"
+      // ? delete --> not possible
+      // delete obj.id
+
+// ~ Object.isFrozen() : Returns boolean value, used to check whether object is freezed or not.
+      // console.log(Object.isFrozen(obj));
+
+// ~ Object.seal() : Does not prevents the mpodification of existing property, and prevents the addition of new properties, prevents the deletion of existion properties.
+
+      // Object.seal(obj)
+      // ? update --> possible
+      // obj.objName = "newVal"
+      // ? addition --> not possible
+      // obj.newProp = "newVal"
+      // ? delete --> not possible
+      // delete obj.id
+
+// ~ Object.isSealed() : Returns boolean value, used to check whether object is sealed or not.
+      // console.log(Object.isSealed(obj));
+
+// ~ Object.assign(destination,source) : Copy the values of all of the properties from one or more source objects to a target object. Returns the target object.
+
+      // let obj = {
+      //       id : 1, 
+      //       objName : "asdf",
+      //       sal : 23456
+      // }      
+      // let obj2 = {
+      //       isDev : true
+      // }
+      // let obj3 = {
+      //       address : "abc"
+      // }
+
+      // let newObj = Object.assign({}, obj, obj2, obj3)
+      // console.log(newObj);

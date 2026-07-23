@@ -732,3 +732,28 @@ Object:
 
   - Key and value pair together it is known as properties and multiple properties are seperated by using ,
   
+  this keyword: It is a pointing mechanism which points to the current context of object. 
+    ~ inside named function the value of this keyword in non - strict mode , will points to the window
+    ~ inside named function the value of this keyword in case of strict mode will points to the undefined.
+
+  Methods in object:
+
+    let obj = {
+      id : 1, 
+      objName : "asdf",
+      sal : 23456
+    }
+
+    - Object.keys() : It returns all the keys present inside an object in the form of array.
+        e.g. console.log(Object.keys(obj));
+
+    - Object.values() : It returns all the values present inside an object in the form of array.
+        e.g. console.log(Object.values(obj));
+
+    - Object.entries() : It returns both key and value pars in the form of nested / multi-dimensional array. 
+        e.g. console.log(Object.entries(obj));
+
+    - Object.fromEntries() : It accepts multi- dimensional array and converts it into object.
+        e.g. console.log(Object.fromEntries([["id",1],["objName","qwerty"]]));
+
+    - 
