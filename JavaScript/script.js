@@ -679,7 +679,7 @@
 // let obj = new ObjConstructor(1 , "abc")
 // console.log(obj);
 
-// ! this keyword
+// ! this keyword : pointing mechnaism
 // console.log(this);
 
 // function abc(){
@@ -774,3 +774,135 @@
 
       // let newObj = Object.assign({}, obj, obj2, obj3)
       // console.log(newObj);
+
+// ! Shallow copy : Copies the main character but shares the nested items. Changing a nested item in the copy will change the original.
+      // let obj = {
+      //       id : 1 ,
+      //       objName : "abc",
+      //       isDev : true,
+      //       address : {
+      //             street : 'A',
+      //             pin : 234567,
+      //             city : "Delhi"
+      //       }
+      // }
+
+      // ? 1st way
+      // let newObj = {...obj}
+      // newObj.objName = "newData"
+      // newObj.address.city = "Banglore"
+      // console.log("original", obj);
+      // console.log("new", newObj);
+
+// ! Deep copy : Copies the container and duplicates all nested items. The copy is 100% independent. Changing the copy never affects the original. 
+      // ? 1st way
+      // let newObj = JSON.parse(JSON.stringify(obj))
+
+      // ? 2nd way
+      // let newObj = structuredClone(obj)
+      // newObj.id = 1000;
+      // newObj.address.city = "Gurugram"
+      // console.log("original", obj);
+      // console.log("new", newObj);
+
+// ! JSON.stringify() : Inbuilt method in JS that converts JS object into JSON
+// ! JSON.parse() : Inbuilt method in JS that converts JSON into JS Object
+
+// ! Deconstructing :  
+
+// ~ Deconstructing in Array : 
+      // let arr = ["data1","data2","data3","data4","data5"]
+      // let [a,b, ...remainingdata] = arr
+      // console.log(a);
+      // console.log(b);
+      // console.log(remainingdata);
+
+// ~ Deconstructing in Object : 
+      // let obj = {
+      //       id : 1,
+      //       objName : "abc",
+      //       isDev : true,
+      //       sal : 97654,
+      //       isTester : null
+      // }
+      // let {id,sal, ...data} = obj
+      // console.log(id);
+      // console.log(sal);
+      // console.log(data);
+
+      // let obj = {
+      //       id : 1 ,
+      //       objName : "abc",
+      //       isDev : true,
+      //       address : {
+      //             street : 'A',
+      //             pin : 234567,
+      //             city : "Delhi"
+      //       }
+      // }
+      // let{address} = obj
+      // let {city} = address
+      // console.log(city);
+
+// ~ rest parameter
+
+// function abc(...data){
+//       console.log(data);
+// }
+// abc(1,2,34,56,6,78,3,45,6,7,8)
+
+// ! Advanced loops
+
+// ~ forEach : It is method, used with array only.
+let arr = [1,2,3,4,5,6]
+arr.forEach((val,index,arr)=>{
+      console.log(val,index,arr);
+})
+
+// ~ for-in
+let obj = {
+      id : 1,
+      objName : "abc",
+      sal : 654357,
+      isDev : true
+}
+for(let data in obj){
+      console.log(data , obj[data]);
+}
+
+let arr = [1,2,3,4,5,6]
+for(let data in arr){
+      console.log(data , arr[data]);
+}
+
+// ~ for-of
+let arr = [1,2,3,4,5,6]
+for(let data of arr){
+      console.log(data);
+}
+
+let str = "qwertyu"
+for(let data of str){
+      console.log(data);
+}
+
+let unique = new Set ([1,1,1,1,1,2,2,2,2,2,2,3,3,3,4,4,4,4,4])
+for(let data of unique){
+      console.log(data);
+}
+
+// ! Prototype : It is keyword , every object has an internal linked with each other , by using protype. It is a object
+
+console.log(String.prototype);
+console.log(Object.prototype);
+console.log(Array.prototype);
+
+let str = "string"
+console.log(str.__proto__);
+
+let arr = []
+console.log(arr.__proto__);
+
+console.log(String.prototype === str.__proto__);
+
+console.log(window.__proto__.__proto__.__proto__.__proto__.__proto__);

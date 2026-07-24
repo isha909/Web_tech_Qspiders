@@ -756,4 +756,27 @@ Object:
     - Object.fromEntries() : It accepts multi- dimensional array and converts it into object.
         e.g. console.log(Object.fromEntries([["id",1],["objName","qwerty"]]));
 
-    - 
+  Shallow copy : Copies the main character but shares the nested items. Changing a nested item in the copy will change the original.
+
+  Deep copy : Copies the container and duplicates all nested items. The copy is 100% independent. Changing the copy never affects the original. 
+
+  JSON.stringify() : Inbuilt method in JS that converts JS object into JSON
+
+  JSON.parse() : Inbuilt method in JS that converts JSON into JS Object
+
+----------------------------------------------------------------------------------------------------------------
+
+Deconstructing in JavaScript is a shortcut for unpacking values from arrays or properties from objects and saving them into variables. It is a cleaner way to extract data without writing repetitive lines of code.
+
+  Array Deconstructing (Order matters): JS assigns values to your variables based on their exact position in case of array. You can name the variables whatever you want.
+
+  Object Deconstructing(Names matter): Because object properties do not have a set order, JS looks for variables that matches the exact key names inside the object.
+
+The JS spread operator (...) is like unpacking a box. It takes all the individual items out of a container (like an array or an object) and spreads them out into a new place.
+
+The rest parameter is a JS feature that lets a function accepts any number of extra arguments and bundles them cleanly into a single array. It is written using three dots (...) followed by a name of your choice.
+
+------------------------------------------------------------------------------------------------------------------
+
+Advanced Loops:
+  
